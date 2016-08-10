@@ -1,9 +1,5 @@
 Flask
 Flask-SQLAlchemy
-SQLAlchemy
-argparse
-distribute
 gunicorn
 gevent
-wsgiref
 psycopg2
