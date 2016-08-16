@@ -11,10 +11,10 @@ from flask_sqlalchemy import SQLAlchemy
 from os import environ, path
 from aysa.ddc.dml.status import services
 
+
 def abspath(*args):
     return path.abspath(path.join(*args))
 
-root = None
 ROOT_PATH = abspath(path.dirname(__file__))
 
 class AySA(object):
@@ -45,8 +45,9 @@ class AySA(object):
 
     def run(self, *args, **kwargs):
         self.app.run(*args, **kwargs)
+root = AySA()
+
 
 if __name__ == '__main__':
-    root = AySA()
     root.app.register_blueprint(services.root)
     root.app.run(debug=True)
