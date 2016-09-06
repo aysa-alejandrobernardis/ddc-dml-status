@@ -17,6 +17,7 @@ def abspath(*args):
 
 ROOT_PATH = abspath(path.dirname(__file__))
 
+
 class AySA(object):
     def __init__(self):
         self.db = None
