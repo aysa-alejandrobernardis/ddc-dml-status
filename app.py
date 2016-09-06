@@ -6,7 +6,7 @@
 # Created: 09/ago/2016 10:49
 # ~
 
-from flask import Flask
+from flask import Flask, url_for
 from flask_sqlalchemy import SQLAlchemy
 from os import environ, path
 from aysa.ddc.dml.status import services
